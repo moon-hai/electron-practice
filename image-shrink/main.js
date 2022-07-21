@@ -123,6 +123,8 @@ async function shrinkImage ({ imgPath, quality }) {
         })
       ]
     })
+
+    mainWindow.webContents.send('image:done')
   } catch(err) {
     console.log(err)
   }

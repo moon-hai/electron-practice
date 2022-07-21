@@ -67,7 +67,9 @@
       })
     })
 
-    document.getElementById('output-path').innerText = 'dadas'
+    window.image.doneResize(() => {
+      document.getElementById('output-path').innerText = 'done'
+    })
   </script>
 </body>
 </html>
